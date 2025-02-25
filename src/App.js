@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+/* function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,5 +21,27 @@ function App() {
     </div>
   );
 }
+
+export default App; */
+
+import React from 'react';
+import CubeLanding from './CubeLanding'; // Import your component
+
+const App = () => {
+  const imageURLs = [
+    require('./images/GENimg.png'), //front face
+    require('./images/3-Dimg.png'),
+    require('./images/3-Dimg.png'),
+    require('./images/NEWimg.png'),
+    require('./images/NEWimg.png'), // top face
+    require('./images/3-Dimg.png'),
+  ];
+
+  return (
+    <div>
+      <CubeLanding images={imageURLs}/>
+    </div>
+  );
+};
 
 export default App;
