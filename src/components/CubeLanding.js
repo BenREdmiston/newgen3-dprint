@@ -6,10 +6,7 @@ const CubeContainer = styled.div`
   width: 500px; /* Adjust size as needed */
   height: 500px; /* Adjust size as needed */
   perspective: 800px; /* Creates 3D space */
-  position: fixed; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative; 
   display: flex;
   border: 20px solid #FCB97D; /* Add a border */
   background-color: #FCB97D; /* Add a background color */

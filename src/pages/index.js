@@ -21,10 +21,10 @@ const LandingPage = () => {
   return (
     <div className='container'>
       <h1 className='titleheader'>NEWGEN3DPRINT</h1>
-      <br></br>
       <h2 className='subtitleheader'>INNOVATION LAYER BY LAYER</h2>
-      <br></br>
-      <CubeLanding images={imageURLs} link="/main" onClick={handleCubeClick} /> {/* Pass link prop */}
+      <div className='content'>
+        <CubeLanding images={imageURLs} link="/main" onClick={handleCubeClick} /> {/* Pass link prop */}
+      </div>
     </div>
   );
 };

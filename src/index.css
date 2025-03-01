@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Warnes',  'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Macondo',  'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,7 +16,7 @@ code {
 }
 
 .h1 {
-  font-family: 'Warnes', serif;
+  font-family: 'Macondo', serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2em;
