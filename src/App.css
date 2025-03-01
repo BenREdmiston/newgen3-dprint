@@ -1,4 +1,6 @@
- .App {
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Warnes&display=swap');
+.App {
   text-align: center;
   background-color: #282c34;
 }
@@ -36,4 +38,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  width: 75%;
+  border: 10px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.titleheader {
+  font-family: 'Dynapuff', serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 6rem;
+  color: #070808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitleheader {
+  font-family: 'Macondo', cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #070808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin: auto;
+}
+
+.cube-container {
+  border: 10px double black;
+  padding: 10px;
+  margin: 10px;
+  background-color: #FCB97D; /* Add a background color */
+  border-radius: 75px; /* Optional: round the corners */
 }

@@ -1,46 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import LandingPage from './pages/index'; // Ensure correct import
+import About from './pages/about';
+import CompanyPrints from './pages/companyprints';
+import Merch from './pages/merch';
+import Enquiry from './pages/enquiry';
+import MainPage from './pages/mainpage';
 import './App.css';
 
-/* function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App; */
-
-import React from 'react';
-import CubeLanding from './CubeLanding'; // Import your component
-
 const App = () => {
-  const imageURLs = [
-    require('./images/GENimg.png'), //front face
-    require('./images/3-Dimg.png'),
-    require('./images/3-Dimg.png'),
-    require('./images/NEWimg.png'),
-    require('./images/NEWimg.png'), // top face
-    require('./images/3-Dimg.png'),
-  ];
-
   return (
-    <div>
-      <CubeLanding images={imageURLs}/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} /> {/* Ensure correct component */}
+        <Route path="/main" element={<MainPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/companyprints" element={<CompanyPrints />} />
+        <Route path="/merch" element={<Merch />} />
+        <Route path="/enquiry" element={<Enquiry />} />
+      </Routes>
+    </Router>
   );
 };
 

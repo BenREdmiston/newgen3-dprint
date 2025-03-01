@@ -3,18 +3,25 @@
     width: 500px; /* Adjust size as needed */
     height: 500px; /* Adjust size as needed */
     perspective: 800px; /* Creates 3D space */
-    position: absolute; /* Or relative, depending on your layout */
+    position: fixed; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    border: 20px solid #FCB97D ; /* Add a border */
+    background-color: #FCB97D; /* Add a background color */
+    border-radius: 75px; /* Optional: round the corners */
+    padding: 5px; /* Add some padding */ 
+    margin: 5px; /* Add some margin */
   }
   
   .cube {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
+    transform: rotateY(-40deg) rotateX(-45deg);
     transform-style: preserve-3d; /* Important for 3D effect */
-    transition: transform 0.1s ease-out; /* Smoother and more responsive rotation */
+    transition: transform 0.1s ease; /* Smooth rotation */
     cursor: pointer;
   }
   
